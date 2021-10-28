@@ -1,0 +1,38 @@
+// Program on string methods2
+
+
+public class Stringgsss {
+	public static void main(String[]args)
+	{
+		
+		
+		//indexOf()
+		String str3="Today is Friday";
+		System.out.println(str3.indexOf("j"));
+		System.out.println(str3.indexOf("iday"));
+		System.out.println(str3.indexOf('a'));
+		System.out.println(str3.indexOf('a',4));
+		System.out.println(str3.indexOf('a',str3.indexOf('a')+1));
+		System.out.println(str3.indexOf("day",3));
+		
+		//lastIndexOf()
+		
+		String str4="Hi how are you?";
+		System.out.println(str4.lastIndexOf("o"));
+		
+	   
+		//Substring
+		 String str5=new String("This is a class");
+		 for(int i=0;i<str5.length();i++)
+		 {
+			 System.out.print(str5.substring(2,32));
+		 }
+		
+		
+	   
+		
+
+		
+	}
+	
+}

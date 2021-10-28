@@ -1,0 +1,20 @@
+//Program to find compound interest
+
+import java.io.*;
+import java.util.Scanner;
+class Java
+{
+    public static void main(String[] args)
+    {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter principle amount");
+        double p=obj.nextDouble();
+        System.out.println("Enter rate");
+        int r=obj.nextInt();
+        System.out.println("Enter time");
+        int t=obj.nextInt();
+        double compoundinterest=p *(Math.pow((1 + r / 100),t));
+          
+        System.out.println("Compound interest is "+ compoundinterest);
+    }
+}

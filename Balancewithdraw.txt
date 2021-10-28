@@ -1,0 +1,35 @@
+class oops{
+	double balance;
+	void addbalance(double value)
+	{
+		balance=balance+value;
+	}
+	double getbalance()
+	{
+		return balance;
+	}
+	double withdraw(double Amount)
+	{
+		if (balance>(Amount+5000) )
+		{
+			balance=balance-Amount;
+			return balance;
+		}
+		else
+		{
+			System.out.println("Insufficient amount");
+			return -1;
+		}
+			
+		
+	}
+	public static void main(String args[])
+	{
+		oops ob=new oops();
+		ob.addbalance(1000);
+		ob.addbalance(ob.getbalance()*2);
+		System.out.println(ob.getbalance());
+		System.out.println(ob.withdraw(300));
+		
+	}
+}

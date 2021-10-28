@@ -1,0 +1,570 @@
+//Program on basic operations
+public class Twentyseven_july {
+	public static void main(String args[])
+	{
+		int a=Integer.parseInt(args[0]);
+		int b=Integer.parseInt(args[1]);
+		System.out.println("The value of a is"+a);
+		System.out.println("The value of b is"+b);
+		System.out.println("The value of a+b is"+(a+b));
+		System.out.println("The value of a-b is"+(a-b));
+		System.out.println("The value of a*b is"+(a*b));
+		System.out.println("The value of a/b is"+(a/b));
+		System.out.println("The value of a%b is"+(a%b));
+	}
+
+}
+
+//Program on datatypes
+
+public class JavaProgram{  
+	public static void main(String args[]){  
+	byte b=-128;
+	double f=1.2;
+	boolean a=true;
+	float f1=1;
+	float f2=1.2323f;
+	
+	float f3=987654321.1234567f;
+	float f4=6.123456789f;
+	
+	double f5=987654321.1234567f;
+	double f6=6.123456789f;
+
+    System.out.println("Byte :"+b);  
+    System.out.println("Double1:"+f);
+    System.out.println("Boolean:"+a);
+    System.out.println("Float1:"+f1);
+    System.out.println("FLoat2:"+f2);
+    System.out.println("FLoat3:"+f3);
+    System.out.println("FLoat4:"+f4);
+    System.out.println("Double2:"+f5);
+    System.out.println("Double3:"+f6); 
+}
+}
+
+//Program on Narrowing and widening Casting
+
+public class JavaProgram{  
+	public static void main(String args[]){  
+	int a1=17,a2=017,a3=0x17;
+    	double d1=a1;
+    	char c1='a';
+    	int i4=c1;
+    	int i5=(int)f3;
+    	int i6=2552222;
+    	char c2=(char)i6;
+    	float f7=(float)f5;
+    	System.out.println("Int1:"+a1);
+    	System.out.println("Int Octal:"+a2);
+    	System.out.println("Int Hexa:"+a3);
+    
+    	System.out.println("Widening casting from int to double:"+d1);
+    	System.out.println("Widening Casting from char to int:"+i4);
+    	System.out.println("Narrowing Casting from double to int:"+d1);
+    	System.out.println("Narrowing Casting from float to int:"+f7);
+    	System.out.println("Narrowing Casting from int to char:"+c2);
+	
+}
+}
+
+
+//Program using CommandLine arguments
+public class Commandlinearg {
+	static public void main(String[]args) {
+		int i1=Integer.parseInt(args[0]);
+		float i2=Float.parseFloat(args[1]);
+		float c=i1/i2;
+		System.out.println(i1+i2);
+		System.out.println("Result is:"+i1+i2+20);
+		System.out.println("Result is eq:"+i1+i2+args[2]);
+		System.out.println("Output"+c);
+	}
+
+}
+
+
+//Program to find out if it is a alphabet or digit or Special char
+
+public class Characterinput {
+	public static void main(String args[])
+	{
+		char a1='%';
+		if ((a1>=65 & a1<=90)||(a1>=97 & a1<=122))
+				System.out.println("Alphabet");
+		else if (a1>='0' & a1<='9')
+			System.out.println("Digit");
+		
+		else
+			System.out.println("Special Character");
+
+
+}
+}
+
+//Program using if, else if,else
+
+public class Characterinput {
+	public static void main(String args[])
+	{
+		char c='z';
+		if( c=='R'||c=='r')
+			System.out.println("Red");
+		else if ( c=='b'||c=='B')
+			System.out.println("Blue");
+		else if ( c=='g'||c=='G')
+			System.out.println("Green");
+		else if ( c=='o'||c=='O')
+			System.out.println("Orange");
+		else if ( c=='y'||c=='Y')
+			System.out.println("Yellow");
+		else if ( c=='w'||c=='W')
+			System.out.println("White");
+		else
+			System.out.println("Invalid input");
+		
+
+
+}
+}
+
+//Program using switch case
+
+
+public class Characterinput {
+	public static void main(String args[])
+	{
+		int w=Integer.parseInt(args[0]);
+		switch(w) {
+		case 1:
+			System.out.println("Sunday");
+			break;
+		case 2:
+			System.out.println("Monday");
+			break;
+		case 3:
+			System.out.println("Tuesday");
+			break;
+		case 4:
+			System.out.println("Wednesday");
+			break;
+		case 5:
+			System.out.println("Thursday");
+			break;
+		case 6:
+			System.out.println("Friday");
+			break;
+		case 7:
+			System.out.println("Saturday");
+			break;
+		default:
+			System.out.println("Invalid input");
+			break;
+		
+		}
+		
+
+
+}
+}
+
+//Program using for loop
+
+
+public class Characterinput {
+	public static void main(String args[])
+	{
+		if (args.length==0)
+			System.out.println("No Values");
+		for(int n=1;n<args.length;n=n+1) {
+			System.out.print(args[n]+',');
+		
+			
+		}
+		System.out.println("\n");
+		for(int i=10;i<=14;i=i+1) {
+			if (i%2==0)
+				System.out.println(i);
+					
+		}
+		
+
+
+}
+}
+
+//Program to find out if a number is prime or not
+
+public class Primenumber {
+	public static void main(String args[])
+	{
+		
+		int num=Integer.parseInt(args[0]);
+		int count=0;
+		for(int i=2;i<=Math.sqrt(num);i++)
+		{
+			if(num%i==0)
+				count++;
+		}
+		if(count==0)
+			System.out.println("It is Prime");
+		else
+			System.out.println("Not prime");
+		
+
+
+}
+}
+
+
+//Program to find individual sum of a number
+
+public class IndividualSum{
+	public static void main(String args[])
+	{
+		
+		int z=1234,sum=0,r;
+		while(z>0)
+		{
+			r=z%10;
+			sum=sum+r;
+			z=z/10;
+		}
+		System.out.println("Sum of the number is"+sum);
+
+
+}
+}
+
+
+//Program to reverse the number
+
+public class ReversedNo{
+	public static void main(String args[])
+	{
+		
+		int a = 1234, rev = 0;
+	    while(a!= 0) 
+	    {
+	    
+	      int d = a % 10;
+	      rev = rev * 10 + d;
+	      a= a/10;
+	    }
+	    System.out.println("Reversed number of 1234 is "+rev);
+	    
+
+}
+}
+
+
+//Program to find check if a no is palindrome or not
+
+public class Palindrome{
+	public static void main(String args[])
+	{
+		
+		int x=Integer.parseInt(args[1]);
+	    a=x;
+	    r=0;
+	    while(x>0)
+	    {
+	    	int q=x%10;
+	    	r=r*10+q;
+	    	x=x/10;	    	
+	    }
+	    if(a==r)
+	    	System.out.println("Number is a Palindrome ");
+	    else
+	    	System.out.println("Not a Palindrom ");
+
+}
+}
+
+//Program on arrays
+
+public class Arrays {
+	public static void main(String[] args) {
+		/**
+		int len=args.length;
+		if(len==0)
+			System.out.println("No arguments given");
+		for(int i=0;i<len;i++)
+		{
+			System.out.println((i+1)+' '+args[i]);
+		}
+}
+}
+
+//Program to print the index of a no in array
+
+public class Arrays {
+	public static void main(String[] args) {
+		int[]source={100,200,300};
+	    int[]dest=new int[3];
+	    System.arraycopy(source,0,dest,0,source.length);
+		
+		for(int i=0;i<dest.length;i++)
+		{
+			System.out.println("Element ar index"+i+' '+dest[i]);
+		}
+}
+}
+
+//Program to print the char value from ascii no
+
+public class Arrays {
+	public static void main(String[] args) {
+		int []asciiarray= {96,97,98,99,100,101,102,103,104,105};
+		for (int i=0;i<asciiarray.length;i++)
+		{
+			
+			System.out.println((i+1)+" "+(char)asciiarray[i]);
+		}
+		for (int i=0;i<256;i++)
+		{
+			System.out.println((i+1)+" "+(char)i);
+		}
+		
+
+
+}
+}
+
+
+
+//Program to print the min and max values of Integer
+
+
+public class Arrays {
+	public static void main(String[] args) {
+		int []arr=new int[10];
+		int leng=arr.length;
+		for(int i=0;i<len;i++)
+		{
+			arr[i]=Integer.parseInt(args[i]);
+		}
+		int sum=0;
+		for(int i=0;i<leng;i++)
+			sum=sum+arr[i];
+		System.out.println("Sum is"+sum);
+		System.out.println("Average is"+(sum/(float)leng));
+		int max=Integer.MAX_VALUE;
+		int min=Integer.MIN_VALUE;
+		System.out.println("Mamximum value "+Integer.MAX_VALUE);
+		System.out.println("Minimum value"+Integer.MIN_VALUE);
+		
+
+
+}
+}
+
+
+//Program to find max and minimum values among the given 10 numbers
+public class Arrays {
+	public static void main(String[] args) {
+		int[]arr1={1,4,34,56,7};
+		 int len1=arr1.length;
+		 int key=Integer.parseInt(args[0]);
+		 for(int i=0;i<len1;i++)
+		 {
+			 if (key==arr1[i])
+			 {
+				 System.out.println("Position of key element"+(i+1));
+				 break;
+			 }
+			 else
+			 {
+				 System.out.println(-1);
+				 
+			 }
+			 
+		
+		 }
+		
+
+
+}
+}
+
+
+//Program to Sort the array of elements
+public class Arrays {
+	public static void main(String[] args) {
+		
+		 int []arr2= {8,493,2,10,1,221,43,0};
+		 int len2=arr2.length;
+		 int x=0;
+		 for(int i=0;i<len2;i++)
+		 {
+			 for(int j=i+1;j<len2;j++)
+			 {
+				 if(arr2[i]>arr2[j])
+				 {
+					 x=arr2[i];
+					 arr2[i]=arr2[j];
+					 arr2[j]=x;
+				 }
+			 }
+		 }
+		 System.out.print("Sorted array");
+		 for (int i=0; i<len2; i++) 
+		 {     
+	            System.out.print(arr2[i] + " ");    
+	     } 
+		 
+
+
+}
+}
+
+//Program to Insert an element at a specific position
+public class Arrays {
+	public static void main(String[] args) {
+		
+		 
+		int[]arr3= {1,2,3,4,5,6,7,8,9};
+		int len3=arr3.length;
+		int[]arr4=new int[len3+1];
+		int len4=arr4.length;
+		int value=Integer.parseInt(args[0]);
+		int position=Integer.parseInt(args[1]);
+		for(int i=0;i<len4;i++)
+		{
+			if(i<(position-1)) 
+			{
+				arr4[i]=arr3[i];	
+			}
+			if(i==(position-1))
+			{
+				arr4[i]=value;
+			}
+			if(i>(position-1))
+			{
+				arr4[i]=arr3[i-1];
+			}
+			
+			System.out.println(arr4[i]);
+		 
+
+
+}
+}
+
+
+//Program to Ignore the numbers 6 and 7 and cal the sum of numbers which are not in boundaries of 6 and 7
+public class Arrays {
+	public static void main(String[] args) {
+		
+		 
+		
+		
+				int[] arr5= {1,2,3,4,5,6,7,8,7};
+				int len5=arr5.length;
+				int totalsum = 0;
+				int ignoredsum=0;
+				int lowerbound=6;
+				int upperbound=7;
+				int result=0;
+				int flag=0;
+				for(int i=0;i<len5;i++) 
+				{
+					totalsum=totalsum+arr5[i];
+					if(arr5[i]==lowerbound)
+					{
+						flag=1;
+					}
+					if(flag==1)
+					{
+						ignoredsum=ignoredsum+arr5[i];
+					}
+					if(arr5[i]==upperbound)
+					{
+						flag=2;	
+					}
+					
+				}
+				if(flag==1)
+				{
+					result=totalsum;
+				}
+				if(flag==2)
+				{
+					result=totalsum-ignoredsum;
+				}
+				System.out.println(result);
+				
+				**/
+		 
+
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+//Program on BufferedReader method
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class BufferedR
+{
+  public static void main(String[]args)throws IOException
+  {
+   BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
+   System.out.println("Write your name");
+   String name=reader.readLine();
+   System.out.println("Welcome"+name);
+   
+
+  }
+}
+
+//Program on Scanner method
+
+
+import java.util.Scanner;
+public class scanner {
+	public static void main(String[]args)
+	{
+		double total_marks=0;
+		double av=0;
+		Scanner myObj=new Scanner(System.in);
+		System.out.print("Enter Student name:");
+		String name=myObj.nextLine();
+		System.out.print("Enter Regd:");
+		int Redgno=myObj.nextInt();
+		System.out.print("Enter sub1 marks:");
+		double S1=myObj.nextDouble();
+		System.out.print("Enter sub2 marks:");
+		double S2=myObj.nextDouble();
+		System.out.print("Enter sub3 marks:");
+		double S3=myObj.nextDouble();
+		System.out.print("Enter sub4 marks:");
+		double S4=myObj.nextDouble();
+		System.out.print("Enter sub5 marks:");
+		double S5=myObj.nextDouble();
+		total_marks=(S1+S2+S3+S4+S5);
+		av=(total_marks/5);
+		System.out.println("Student name:"+name);
+		System.out.println("Redg no:"+Redgno);
+		System.out.println("Total marks"+total_marks);
+		System.out.println("Average"+av);
+		
+		System.out.print("Enter password");
+		char[] N1=System.console().readPassword();
+		System.out.println(N1);
+		
+	
+	}
+
+}
+

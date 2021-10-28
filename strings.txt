@@ -1,0 +1,28 @@
+//Program on strings 
+
+public class Stringgss {
+	public static void main(String[]args)
+	{
+		//String inputs
+		   
+	   	String str1="HelloWelcome";
+	   	int len1=str1.length();
+		System.out.println(str1);
+		System.out.println(len1);
+		
+		String str2=new String("Hellowelcome");
+		int len2=str2.length();
+		System.out.println(len2);
+		System.out.println(str2);
+	   
+		char[] helloworld= {'h','e','l','l','o'};
+		String hellostring=new String(helloworld);
+		System.out.println(hellostring);
+		char[] ch1= {'p','r','a','m','o','d','a'};
+		String str=new String(ch1);
+		int len3=str.length();
+		System.out.println(len3);
+		System.out.println(str);
+}
+}
+

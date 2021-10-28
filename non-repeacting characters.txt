@@ -1,0 +1,36 @@
+//3.give a string s,find the non-repeacting character in it and return its index.if it does not exist,return -1//
+class Main {
+    static final int NO_OF_CHARS = 256;
+    static char count[] = new char[NO_OF_CHARS];
+    static void getCharCountArray(String str)
+    {
+        for (int i = 0; i < str.length(); i++)
+            count[str.charAt(i)]++;
+    }
+    static int firstNonRepeating(String str)
+    {
+        getCharCountArray(str);
+        int index = -1, i;
+ 
+        for (i = 0; i < str.length(); i++) {
+            if (count[str.charAt(i)] == 1) {
+                index = i;
+                break;
+            }
+        }
+ 
+        return index;
+    }
+    public static void main(String[] args)
+    {
+        String str = "aabb";
+        int index = firstNonRepeating(str);
+ 
+        System.out.println(
+            index == -1
+                ? "All characters are repeating in  string "
+                      + "-1"
+                : "First non-repeating character is "
+                      + str.charAt(index));
+    }
+}

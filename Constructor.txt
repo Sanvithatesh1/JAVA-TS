@@ -1,0 +1,20 @@
+class oops
+{
+	public static void main(String[]args)
+	{
+		//Constructor has the same name that of class name
+		Constructor c1=new Constructor();
+		Constructor c2=new Constructor(100);
+	}
+}
+class Constructor
+{
+	Constructor()
+	{
+		System.out.println("This is default constructor");
+	}
+	Constructor(int a)
+	{
+		System.out.println("This is a constructor with one argument "+a);
+	}
+}

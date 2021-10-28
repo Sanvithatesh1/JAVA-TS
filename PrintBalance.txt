@@ -1,0 +1,18 @@
+class oops{
+	double balance;
+	void addbalance(double value)
+	{
+		balance=balance+value;
+	}
+	double getbalance()
+	{
+		return balance;
+	}
+	public static void main(String args[])
+	{
+		oops ob=new oops();
+		ob.addbalance(1000);
+		ob.addbalance(ob.getbalance()*2);
+		System.out.println(ob.getbalance());
+	}
+}

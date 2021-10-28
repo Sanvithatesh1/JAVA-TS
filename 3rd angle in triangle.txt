@@ -1,0 +1,16 @@
+//Program to find 3rd angle
+import java.util.Scanner;
+public class Java{
+	public static void main(String[]args)
+	{
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter 1st angle");
+		int a=obj.nextInt();
+		System.out.println("Enter 2nd angle");
+		int b=obj.nextInt();
+		int x=a+b;
+		int c=180-x;
+		System.out.println("The 3rd angle in triangle is "+c);
+		
+	}
+}

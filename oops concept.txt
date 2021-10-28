@@ -1,0 +1,38 @@
+class oops {
+	
+	 
+	 // 
+	int a=10;
+	void disp()
+	{
+		System.out.println("Value of a is"+a);
+	}
+	public static void main(String args[])
+	{
+		oops obj=new oops();
+		System.out.println(obj.a);
+		obj.disp();
+		
+		
+	
+	//updating a value using arguments
+	int a=0;
+	void update(int value)
+	{
+		a=value;
+		
+	}
+	void disp()
+	{
+		System.out.println("Value of a is"+a);
+	}
+	public static void main(String args[])
+	{
+		oops obj=new oops();
+		System.out.println("Initial value is"+obj.a);
+		obj.update(10);
+		obj.disp();
+		
+
+	}
+}

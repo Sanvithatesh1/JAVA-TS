@@ -1,0 +1,49 @@
+// Program on string methods1
+
+public class Strings {
+	public static void main(String[]args)
+	{
+		
+		
+		//String concatenation
+		
+		System.out.println(str2.concat(str1));
+		System.out.println(str1.concat(str2));
+		System.out.println(hellostring.concat(str));
+		
+		//char at particular index
+		
+		char check=str.charAt(6);
+		System.out.println(check);
+		char c=str2.charAt(7);
+		System.out.println(c);
+		
+		//String equals
+		
+		//(==)checks the address of the strings
+		System.out.println(str1==str2);
+		
+		System.out.println(str1.equals(str2));
+		System.out.println(str1.equalsIgnoreCase(str2));
+		
+		//compareTo()
+		
+		System.out.println(str1.compareTo(str2));
+		System.out.println(str1.compareToIgnoreCase(str2));
+		
+		//startsWith() and endsWith()
+		
+		System.out.println("Hello".startsWith("He"));
+		System.out.println("January".endsWith("ryyy"));
+		
+		
+		 }
+		
+		
+	   
+		
+
+		
+	}
+	
+}

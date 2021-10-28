@@ -1,0 +1,67 @@
+class Employee
+{
+	int id;
+	String name;
+	int salary;
+	
+	void setid(int i)
+	{
+		id=i;
+	}
+	void setName(String n)
+	{
+		name=n;
+		
+	}
+	void setSalary(int s)
+	{
+		salary=s;
+	}
+	void getEmployeeDetails()
+	{
+		System.out.println(name+" "+id+" "+salary);
+
+	}
+	Employee()
+	{
+		id=-1;
+		name="NA";
+		salary=0;
+	}
+	Employee(int a)
+	{
+		id=a;
+		name="NA";
+		salary=0;
+	}
+	Employee(int a,String n)
+	{
+		id=a;
+		name=n;
+		salary=0;
+	}
+	Employee(int a,String n,int s)
+	{
+		id=a;
+		name=n;
+		salary=s;
+	}
+	
+}
+class oops
+{
+	
+	public static void main(String args[])
+	{
+		Employee ob=new Employee();
+		Employee ob1=new Employee(10);
+		Employee ob2=new Employee(12,"Pramoda");
+		Employee ob3=new Employee(13,"Pramoda",1234);
+		ob.getEmployeeDetails();
+		ob1.getEmployeeDetails();
+		ob2.getEmployeeDetails();
+		ob3.getEmployeeDetails();
+		
+	}
+}
+

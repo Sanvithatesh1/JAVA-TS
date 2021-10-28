@@ -1,0 +1,19 @@
+// program to find simple interest
+import java.util.Scanner;
+
+public class Java {
+	public static void main(String[] args)
+	{
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter principle amount");
+		double p=obj.nextDouble();
+		System.out.println("Enter time");
+		double t=obj.nextDouble();
+		System.out.println("Enter rate");
+		double r=obj.nextDouble();
+		double i=(p*t*r)/100;
+		System.out.println("Simple interest is"+i);
+		
+	}
+
+}

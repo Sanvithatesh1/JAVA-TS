@@ -1,0 +1,31 @@
+class oops
+{
+	public static void main(String[]args)
+	{
+		subClass sc=new subClass();
+		sc.disp();
+		subClass1 sub1=new subClass1();
+		sub1.disp();
+		
+	}
+	
+}
+class subClass
+{
+	String msg="Hello welcome to class";
+	void disp()
+	{
+		System.out.println(msg);
+		subClass1 sc1=new subClass1();
+		sc1.disp();
+	}
+}
+
+class subClass1
+{
+	String msg="in the sub class1";
+	void disp()
+	{
+		System.out.println(msg);
+	}
+}

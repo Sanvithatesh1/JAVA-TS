@@ -1,0 +1,35 @@
+class oops
+{
+	int id;
+	String name;
+	int salary;
+	
+	void setid(int i)
+	{
+		id=i;
+	}
+	void setName(String n)
+	{
+		name=n;
+		
+	}
+	void setSalary(int s)
+	{
+		salary=s;
+	}
+	void getEmployeeDetails()
+	{
+		System.out.println("Name is "+name);
+		System.out.println("Salary is "+salary);
+		System.out.println("Id is "+id);
+		
+	}
+	public static void main(String args[])
+	{
+		oops ob=new oops();
+		ob.setid(16);
+		ob.setName("Pramoda");
+		ob.setSalary(1000);
+		ob.getEmployeeDetails();
+	}
+}
